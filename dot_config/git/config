@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+	email = epikmemez@outlook.com
+	name = Josh
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true

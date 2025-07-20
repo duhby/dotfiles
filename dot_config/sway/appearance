@@ -1,0 +1,18 @@
+# >> Cursor
+# Name of the cursor theme directory in ~/.icons
+set $cursor_theme Bibata-Modern-Ice
+set $cursor_size 25
+
+seat seat0 xcursor_theme $cursor_theme $cursor_size
+
+# >> GTK
+# https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland#setting-values-in-gsettings
+exec {
+    #gsettings set org.gtk.Settings.FileChooser window-size '(1200, 700)'
+    #gsettings set org.gnome.desktop.interface gtk-theme 'aphelion'
+    #gsettings set org.gnome.desktop.interface icon-theme 'aphelion'
+    gsettings set org.gnome.desktop.interface font-name 'Open Sans'
+    gsettings set org.gnome.desktop.interface cursor-theme $cursor_theme
+    gsettings set org.gnome.desktop.interface cursor-size $cursor_size
+    gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+}

@@ -1,0 +1,13 @@
+set {
+    $left h
+    $down j
+    $up k
+    $right l
+
+    #$sway $HOME/.config/sway/scripts
+    #$eww $HOME/.config/eww/scripts
+
+    #$screenshots_dir $HOME/pix/screenshots
+
+    $term wezterm
+}
