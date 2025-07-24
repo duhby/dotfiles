@@ -4,10 +4,13 @@ set {
     $up k
     $right l
 
-    #$sway $HOME/.config/sway/scripts
+    $sway $HOME/.config/sway/scripts
     #$eww $HOME/.config/eww/scripts
 
     #$screenshots_dir $HOME/pix/screenshots
 
     $term wezterm
+
+    # Combined application launcher + window switcher
+    $menu $sway/rofi-sway
 }

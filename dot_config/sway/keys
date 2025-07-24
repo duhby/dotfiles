@@ -43,4 +43,8 @@ bindsym --to-code {
     $mod+$down focus down
     $mod+$up focus up
     $mod+$right focus right
+
+    # Rofi
+    $mod+space exec $menu
+    #$mod+y exec rofi_mpvtube
 }
