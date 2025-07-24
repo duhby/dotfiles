@@ -20,3 +20,4 @@ alias dict="dict -h dict.org -d wn"
 
 # Startup
 pokeget random --hide-name
+eval "$(starship init zsh)"
