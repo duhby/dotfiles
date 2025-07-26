@@ -1,6 +1,4 @@
 output eDP-1 {
     scale 1.5
     #scale 1
-
-    background $HOME/.config/assets/backgrounds/hyper-light-drifter-camp-3x2.png fill
 }

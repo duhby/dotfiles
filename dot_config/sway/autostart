@@ -1,0 +1,19 @@
+exec {
+    # Sway does not set these in the systemd user environment (FS#63021)
+    systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+    # Prevents GTK apps from hanging for 15-20 sec before launching
+    dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
+    # TODO: Screensharing
+
+    # Notifications
+    dunst
+
+    # TODO: KDE Connect (?)
+
+    # TODO: Eww stuff
+    #$eww/init
+
+    # TODO: other scripts
+}
