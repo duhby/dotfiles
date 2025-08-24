@@ -5,6 +5,7 @@ floating_modifier $mod normal
 bindsym --to-code {
     $mod+Return exec $term
     $mod+i exec zen
+    $mod+m exec lunarclient
 
     # Reload
     $mod+Shift+r reload

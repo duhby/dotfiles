@@ -19,7 +19,20 @@ export LESSHISTFILE=-
 alias dict="dict -h dict.org -d wn"
 alias l="eza -l --icons --git -a"
 alias lt="eza --tree --level=2 --icons --git --long"
+alias vi="nvim"
+
+# Directory environments
+# see https://github.com/nix-community/nix-direnv/issues/324
+# see https://github.com/direnv/direnv/issues/1084
+function enterNixDevelopShell {
+  if [[ -f devenv.nix ]]; then
+    devenv shell -- zsh
+  fi
+}
+# Append to chpwd_functions so it runs when cd'ing
+chpwd_functions+=("enterNixDevelopShell")
 
 # Startup
 pokeget random --hide-name
 eval "$(starship init zsh)"
+
