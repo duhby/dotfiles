@@ -11,6 +11,13 @@
 # >> Wallpaper
 output * bg $HOME/.config/assets/backgrounds/hyper-light-drifter-camp-3x2.png fill
 
+# >> Titlebar and Border
+titlebar_border_thickness 0
+
+set $border_width 0
+
+for_window [app_id=".*"] border normal $border_width
+
 # >> Cursor
 # Name of the cursor theme directory in ~/.icons
 set $cursor_theme Bibata-Modern-Ice
