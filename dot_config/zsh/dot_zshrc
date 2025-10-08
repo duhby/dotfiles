@@ -25,7 +25,7 @@ alias vi="nvim"
 # see https://github.com/nix-community/nix-direnv/issues/324
 # see https://github.com/direnv/direnv/issues/1084
 function enterNixDevelopShell {
-  if [[ -f devenv.nix ]]; then
+  if [[ -f devenv.nix && -z "$IN_NIX_SHELL" ]]; then
     devenv shell -- zsh
   fi
 }
