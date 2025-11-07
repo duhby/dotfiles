@@ -594,6 +594,8 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
 
+        -- Typescript
+        ts_ls = {},
         -- Nix
         nil_ls = {},
         -- Rust
@@ -640,6 +642,9 @@ require('lazy').setup({
         'alejandra',
         -- Python
         'mypy', -- TODO: remove once ty is added
+        -- Typescript
+        'eslint_d',
+        'prettierd',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -698,6 +703,8 @@ require('lazy').setup({
           'ruff_organize_imports',
         },
         nix = { 'alejandra' },
+        javascript = { 'prettierd' },
+        typescript = { 'prettierd' },
 
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
