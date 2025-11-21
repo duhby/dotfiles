@@ -48,4 +48,46 @@ bindsym --to-code {
     # Rofi
     $mod+space exec $menu
     #$mod+y exec rofi_mpvtube
+
+    # Screenshots
+    Print exec "grimshot --notify copy output"
+    Shift+Print exec "grimshot --notify copy window"
+    Control+Print exec "grimshot --notify save output"
+    Shift+Control+Print exec "grimshot --notify save window"
+    # Open last screenshot with image viewer
+    #$mod+Print exec "cd $screenshots_dir && iv $(ls -t)"
+    # Open last screenshot with Gimp
+    #$mod+Shift+Print exec "cd $screenshots_dir && gimp $(ls -t | head -n1)"
+
+    # Brightness
+    XF86MonBrightnessDown exec sh -c \
+      'brightnessctl set 5%- && \
+       brightness=$(brightnessctl get); \
+       max=$(brightnessctl max); \
+       percent=$((brightness * 100 / max)); \
+       notify-send "Brightness: $percent%"'
+    XF86MonBrightnessUp exec sh -c \
+      'brightnessctl set 5%+ && \
+       brightness=$(brightnessctl get); \
+       max=$(brightnessctl max); \
+       percent=$((brightness * 100 / max)); \
+       notify-send "Brightness: $percent%"'
+
+    # Volume
+    XF86AudioRaiseVolume exec sh -c \
+      'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && \
+       vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk "{print int(\$2*100)}"); \
+       notify-send "Volume: $vol%"'
+    XF86AudioLowerVolume exec sh -c \
+      'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && \
+       vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk "{print int(\$2*100)}"); \
+       notify-send "Volume: $vol%"'
+    XF86AudioMute exec sh -c \
+      'wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; \
+       if wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED; then \
+         notify-send "Muted"; \
+       else \
+         vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk "{print int(\$2*100)}"); \
+         notify-send "Volume: $vol%"; \
+       fi'
 }
