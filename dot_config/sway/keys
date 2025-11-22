@@ -6,6 +6,7 @@ bindsym --to-code {
     $mod+Return exec $term
     $mod+i exec zen
     $mod+m exec lunarclient
+    $mod+d exec vesktop
 
     # Reload
     $mod+Shift+r reload
