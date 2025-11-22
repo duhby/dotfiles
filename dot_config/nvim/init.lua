@@ -620,6 +620,8 @@ require('lazy').setup({
         },
         -- Java
         jdtls = {},
+        -- Go
+        gopls = {},
       }
 
       -- Ensure the servers and tools above are installed
