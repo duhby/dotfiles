@@ -11,6 +11,7 @@ application/x-extension-xhtml=zen-beta.desktop
 application/x-extension-xht=zen-beta.desktop
 x-scheme-handler/lunarclient=lunarclient.desktop
 x-scheme-handler/discord-562286213059444737=lunarclient.desktop
+x-scheme-handler/discord=vesktop.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen-beta.desktop;
