@@ -15,6 +15,8 @@ vim.o.mouse = 'a'
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
 
+vim.o.tabstop = 4
+
 -- Prefer "+ to explicitly copy to system clipboard
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
 --vim.schedule(function()
@@ -622,6 +624,8 @@ require('lazy').setup({
         jdtls = {},
         -- Go
         gopls = {},
+        -- Svelte
+        svelte = {},
       }
 
       -- Ensure the servers and tools above are installed

@@ -33,6 +33,6 @@ function enterNixDevelopShell {
 chpwd_functions+=("enterNixDevelopShell")
 
 # Startup
-pokeget random --hide-name
+# pokeget random --hide-name
 eval "$(starship init zsh)"
 
