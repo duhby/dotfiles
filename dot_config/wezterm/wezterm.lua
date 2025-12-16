@@ -13,5 +13,7 @@ config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = false
 config.hide_tab_bar_if_only_one_tab = true
 config.font = wezterm.font("JetBrains Mono")
+config.window_background_opacity = 0.6
+-- config.text_background_opacity = 0.9
 
 return config

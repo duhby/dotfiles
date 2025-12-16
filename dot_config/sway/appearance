@@ -1,11 +1,11 @@
 # >> SwayFX
-#shadows enable
-#shadows_on_csd enable
-#shadow_blur_radius 50
-#shadow_color #0000007F
-#corner_radius 10
-#blur enable
-#titlebar_separator disable
+# shadows enable
+# shadows_on_csd enable
+# shadow_blur_radius 50
+# shadow_color #0000007F
+# corner_radius 3
+blur enable
+# titlebar_separator disable
 #layer_effects 'rofi' 'shadows enable'
 
 # >> Wallpaper
@@ -14,9 +14,9 @@ output * bg $HOME/.config/assets/backgrounds/hyper-light-drifter-camp-3x2.png fi
 # >> Titlebar and Border
 titlebar_border_thickness 0
 
-set $border_width 0
+set $border_width 3
 
-for_window [app_id=".*"] border normal $border_width
+for_window [app_id=".*"] border pixel 3
 
 # >> Cursor
 # Name of the cursor theme directory in ~/.icons
@@ -35,3 +35,17 @@ exec {
     gsettings set org.gnome.desktop.interface cursor-size $cursor_size
     gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 }
+
+# >> Window
+gaps outer 5
+gaps inner 7
+font pango:monospace 1
+# titlebar_padding 0
+# font "sans 0"
+# client.focused font sans 0
+# client.unfocused font sans 0
+# client.focused_inactive font sans 0
+# client.urgent font sans 0
+# smart_gaps off
+# for_window [title="^.*"] title_format = ""
+# default_border none
