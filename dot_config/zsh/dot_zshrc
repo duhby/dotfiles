@@ -24,6 +24,8 @@ alias vi="nvim"
 # Directory environments
 # see https://github.com/nix-community/nix-direnv/issues/324
 # see https://github.com/direnv/direnv/issues/1084
+# TODO: temporarily removed because it was causing issues with `bun dev`
+# https://www.answeroverflow.com/m/1336001291503013961
 function enterNixDevelopShell {
   if [[ -f devenv.nix && -z "$IN_NIX_SHELL" ]]; then
     devenv shell -- zsh
