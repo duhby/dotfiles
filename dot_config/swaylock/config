@@ -1,0 +1,37 @@
+image=/home/josh/.config/assets/backgrounds/hyper-light-drifter-camp-3x2-blurred.png
+
+# TokyoNight Night – swaylock config
+
+inside-color=1a1b26cc
+inside-clear-color=1a1b26cc
+inside-caps-lock-color=283457cc
+inside-ver-color=7aa2f7cc
+inside-wrong-color=f7768ecc
+
+ring-color=7aa2f7ff
+ring-clear-color=9ece6aff
+ring-caps-lock-color=e0af68ff
+ring-ver-color=7dcfffff
+ring-wrong-color=f7768eff
+
+line-color=414868ff
+line-clear-color=9ece6aff
+line-caps-lock-color=e0af68ff
+line-ver-color=7dcfffff
+line-wrong-color=f7768eff
+
+key-hl-color=bb9af7ff
+separator-color=414868ff
+
+text-color=c0caf5ff
+text-clear-color=9ece6aff
+text-caps-lock-color=e0af68ff
+text-ver-color=7dcfffff
+text-wrong-color=f7768eff
+
+layout-bg-color=292e42ff
+layout-border-color=414868ff
+layout-text-color=c0caf5ff
+
+# Optional: make line match ring color for a cleaner look
+line-uses-ring

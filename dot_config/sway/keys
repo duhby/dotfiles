@@ -8,6 +8,7 @@ bindsym --to-code {
     $mod+m exec prismlauncher
     $mod+d exec vesktop
     $mod+o exec obs
+    $mod+x exec swaylock -f
 
     # Reload
     $mod+Shift+r reload

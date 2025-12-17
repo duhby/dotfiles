@@ -16,5 +16,8 @@ exec {
     # TODO: Eww stuff
     #$eww/init
 
+    # Lock screen
+    swayidle -w before-sleep 'swaylock -f'
+
     # TODO: other scripts
 }

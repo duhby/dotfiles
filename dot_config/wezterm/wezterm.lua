@@ -8,6 +8,7 @@ config.window_padding = {
 	bottom = 0,
 }
 
+config.color_scheme = "tokyonight_night"
 config.enable_tab_bar = false
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = false
