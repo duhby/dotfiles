@@ -10,7 +10,7 @@ vim.o.number = true
 vim.o.relativenumber = true
 
 -- Enable mouse support for resizing splits if too lazy to remember the keybinds
-vim.o.mouse = 'a'
+vim.o.mouse = ''
 
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false

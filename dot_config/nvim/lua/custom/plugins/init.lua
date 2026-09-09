@@ -7,6 +7,14 @@ return {
     'numToStr/Comment.nvim',
     opts = {},
   },
+  {
+    'vim-test/vim-test',
+    keys = {
+      { '<leader>tr', '<cmd>TestNearest<cr>', desc = 'Run nearest test' },
+      { '<leader>tf', '<cmd>TestFile<cr>', desc = 'Run test file' },
+    },
+    config = function() end,
+  },
   --{
   --  'lukas-reineke/indent-blankline.nvim',
   --  main = 'ibl',
