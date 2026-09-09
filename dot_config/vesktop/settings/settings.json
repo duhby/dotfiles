@@ -264,9 +264,6 @@
         "MessageLogger": {
             "enabled": false
         },
-        "MessageTags": {
-            "enabled": false
-        },
         "MutualGroupDMs": {
             "enabled": false
         },
@@ -533,6 +530,9 @@
         },
         "BadgeAPI": {
             "enabled": true
+        },
+        "CustomCommands": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -545,6 +545,10 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1763839512062
+        "settingsSyncVersion": 1773687033328
+    },
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
     }
 }
